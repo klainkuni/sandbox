@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Falling Sand Sandbox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+              orbitron: ['Orbitron', 'sans-serif'],
+            },
+            boxShadow: {
+              'glow-cyan': '0 0 15px rgba(34, 211, 238, 0.6), 0 0 5px rgba(34, 211, 238, 0.8)',
+            }
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<style>
+  .bg-deep-space {
+    background-color: #0c0a09;
+    background-image: radial-gradient(circle at top left, #1e1b4b 0%, #0c0a09 40%);
+  }
+  .range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #22d3ee;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #083344;
+  }
+  .range-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #22d3ee;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #083344;
+  }
+</style>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-deep-space text-gray-200">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

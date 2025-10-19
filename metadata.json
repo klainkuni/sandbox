@@ -1,0 +1,5 @@
+{
+  "name": "Falling Sand Sandbox",
+  "description": "A creative sandbox game where you can place different elements like sand, water, stone, and plants onto a canvas and watch them interact in a simulated physics environment. Experiment with combinations and see what happens!",
+  "requestFramePermissions": []
+}
